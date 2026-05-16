@@ -1,0 +1,390 @@
+{
+  "settings": {
+    "name": "Developer",
+    "startDate": "2026-05-16",
+    "placementDate": "2026-07-20",
+    "dailyTaskTarget": 8,
+    "projectNames": [
+      "Project 1",
+      "Project 2",
+      "Project 3",
+      "",
+      ""
+    ]
+  },
+  "todos": {
+    "2026-05-16": [
+      {
+        "id": 1778899661200,
+        "text": "Solve 2–3 Striver problems",
+        "done": false,
+        "type": "smart"
+      },
+      {
+        "id": 1778899661201,
+        "text": "Watch Krish Naik video + code",
+        "done": false,
+        "type": "smart"
+      },
+      {
+        "id": 1778899661202,
+        "text": "Revise CS Core: HLD",
+        "done": false,
+        "type": "smart"
+      }
+    ]
+  },
+  "subjects": {
+    "dsa": {
+      "name": "DSA — Striver Sheet",
+      "color": "#4f8ef7",
+      "type": "count",
+      "topics": [
+        {
+          "name": "Arrays I",
+          "total": 20,
+          "done": 0
+        },
+        {
+          "name": "Arrays II",
+          "total": 20,
+          "done": 0
+        },
+        {
+          "name": "Strings",
+          "total": 15,
+          "done": 0
+        },
+        {
+          "name": "Two Pointers",
+          "total": 10,
+          "done": 0
+        },
+        {
+          "name": "Sliding Window",
+          "total": 8,
+          "done": 0
+        },
+        {
+          "name": "Binary Search",
+          "total": 12,
+          "done": 0
+        },
+        {
+          "name": "Linked List",
+          "total": 14,
+          "done": 0
+        },
+        {
+          "name": "Stack & Queue",
+          "total": 12,
+          "done": 0
+        },
+        {
+          "name": "Recursion & Backtracking",
+          "total": 10,
+          "done": 0
+        },
+        {
+          "name": "Trees BT",
+          "total": 18,
+          "done": 0
+        },
+        {
+          "name": "Trees BST",
+          "total": 10,
+          "done": 0
+        },
+        {
+          "name": "Heap",
+          "total": 8,
+          "done": 0
+        },
+        {
+          "name": "Graphs",
+          "total": 16,
+          "done": 0
+        },
+        {
+          "name": "DP Part 1",
+          "total": 15,
+          "done": 0
+        },
+        {
+          "name": "DP Part 2",
+          "total": 12,
+          "done": 0
+        },
+        {
+          "name": "Greedy",
+          "total": 10,
+          "done": 0
+        },
+        {
+          "name": "Tries & Bit Manipulation",
+          "total": 8,
+          "done": 0
+        }
+      ]
+    },
+    "csCore": {
+      "name": "CS Core",
+      "color": "#f59e0b",
+      "type": "checkbox",
+      "topics": [
+        {
+          "name": "DBMS",
+          "items": [
+            "ER Diagrams",
+            "Normalization",
+            "SQL Queries",
+            "JOINs",
+            "Transactions & ACID",
+            "Indexing",
+            "Concurrency Control"
+          ],
+          "checked": []
+        },
+        {
+          "name": "OS",
+          "items": [
+            "Processes & Threads",
+            "CPU Scheduling",
+            "Memory Management",
+            "Page Replacement",
+            "Deadlocks",
+            "File Systems"
+          ],
+          "checked": []
+        },
+        {
+          "name": "OOPs",
+          "items": [
+            "4 Pillars",
+            "SOLID Principles",
+            "Design Patterns",
+            "Abstract vs Interface",
+            "Exception Handling"
+          ],
+          "checked": []
+        },
+        {
+          "name": "HLD",
+          "items": [
+            "CAP Theorem",
+            "Load Balancing & CDN",
+            "Caching Redis",
+            "System Design — URL Shortener",
+            "System Design — Chat App"
+          ],
+          "checked": []
+        }
+      ]
+    },
+    "dataScience": {
+      "name": "Data Science — Krish Naik",
+      "color": "#8b5cf6",
+      "type": "checkbox",
+      "topics": [
+        {
+          "name": "ML Syllabus",
+          "items": [
+            "Python for DS",
+            "Numpy",
+            "Pandas",
+            "Data Cleaning",
+            "Matplotlib & Seaborn",
+            "EDA",
+            "Statistics & Probability",
+            "Feature Engineering",
+            "Linear Regression",
+            "Logistic Regression",
+            "Decision Tree",
+            "Random Forest",
+            "SVM",
+            "KNN",
+            "XGBoost",
+            "End-to-end ML Project",
+            "Flask/Streamlit Deployment"
+          ],
+          "checked": []
+        }
+      ]
+    },
+    "mern": {
+      "name": "MERN Stack",
+      "color": "#14b8a6",
+      "type": "checkbox",
+      "topics": [
+        {
+          "name": "Fullstack",
+          "items": [
+            "JS ES6+ Refresh",
+            "Promises & Async/Await",
+            "React Basics",
+            "React Hooks",
+            "React Router",
+            "Context API / Redux",
+            "Node.js Basics",
+            "Express REST API",
+            "JWT Authentication",
+            "MongoDB & Mongoose",
+            "Full-stack Integration",
+            "Deployment (Render/Vercel)"
+          ],
+          "checked": []
+        }
+      ]
+    },
+    "projects": {
+      "name": "Resume Projects",
+      "color": "#ec4899",
+      "type": "checkbox",
+      "topics": [
+        {
+          "name": "Project 1",
+          "items": [
+            "Re-read all code",
+            "Run locally — working",
+            "Prepared 3-min walkthrough",
+            "Can answer: why this stack?",
+            "Can answer: biggest challenge?",
+            "Can answer: what would you improve?",
+            "GitHub link ready",
+            "Deployed link ready"
+          ],
+          "checked": []
+        },
+        {
+          "name": "Project 2",
+          "items": [
+            "Re-read all code",
+            "Run locally — working",
+            "Prepared 3-min walkthrough",
+            "Can answer: why this stack?",
+            "Can answer: biggest challenge?",
+            "Can answer: what would you improve?",
+            "GitHub link ready",
+            "Deployed link ready"
+          ],
+          "checked": []
+        },
+        {
+          "name": "Project 3",
+          "items": [
+            "Re-read all code",
+            "Run locally — working",
+            "Prepared 3-min walkthrough",
+            "Can answer: why this stack?",
+            "Can answer: biggest challenge?",
+            "Can answer: what would you improve?",
+            "GitHub link ready",
+            "Deployed link ready"
+          ],
+          "checked": []
+        }
+      ]
+    }
+  },
+  "plan": [
+    {
+      "week": "W1",
+      "dates": "May 16–22",
+      "dsa": "Arrays I (Kadane, prefix, rotate, Pascal)",
+      "csCore": "DBMS I (ER, Normalization, SQL basics)",
+      "dataScience": "Python refresh + Numpy",
+      "mern": "—",
+      "notes": "Phase A begins"
+    },
+    {
+      "week": "W2",
+      "dates": "May 23–29",
+      "dsa": "Arrays II (2-pointer, sliding window, sorting)",
+      "csCore": "DBMS II (JOINs, transactions, indexing)",
+      "dataScience": "Pandas + EDA on real dataset",
+      "mern": "—",
+      "notes": ""
+    },
+    {
+      "week": "W3",
+      "dates": "May 30–Jun 5",
+      "dsa": "Linked List + Stack & Queue",
+      "csCore": "OS I (Processes, Scheduling)",
+      "dataScience": "Stats + Matplotlib + Seaborn",
+      "mern": "—",
+      "notes": ""
+    },
+    {
+      "week": "W4",
+      "dates": "Jun 6–12",
+      "dsa": "Binary Search + Greedy",
+      "csCore": "OS II (Memory, Deadlock, File Systems)",
+      "dataScience": "Feature Engineering + Hypothesis Testing",
+      "mern": "—",
+      "notes": ""
+    },
+    {
+      "week": "W5",
+      "dates": "Jun 13–19",
+      "dsa": "Trees (BT + BST)",
+      "csCore": "OOPs (SOLID + Design Patterns)",
+      "dataScience": "ML Algorithms I (LR, DT, RF, SVM, KNN)",
+      "mern": "—",
+      "notes": ""
+    },
+    {
+      "week": "W6",
+      "dates": "Jun 20–26",
+      "dsa": "Graphs (BFS/DFS/Dijkstra)",
+      "csCore": "HLD (CAP, Load Balance, System Design)",
+      "dataScience": "XGBoost + End-to-end ML Project",
+      "mern": "JS ES6+ start (Jun 22)",
+      "notes": "CS Core + DS complete! MERN starts!"
+    },
+    {
+      "week": "W7",
+      "dates": "Jun 27–Jul 3",
+      "dsa": "DP Part 1 (1D, 2D, strings)",
+      "csCore": "— revision only",
+      "dataScience": "— revision only",
+      "mern": "React (Hooks, Router, Context)",
+      "notes": "Phase B"
+    },
+    {
+      "week": "W8",
+      "dates": "Jul 4–10",
+      "dsa": "DP Part 2 + Tries + Bit Manip",
+      "csCore": "— revision only",
+      "dataScience": "— revision only",
+      "mern": "Node + Express + MongoDB + Auth",
+      "notes": ""
+    },
+    {
+      "week": "W9",
+      "dates": "Jul 11–17",
+      "dsa": "Revision — weak topics only",
+      "csCore": "Flashcard Q&A revision",
+      "dataScience": "Project walkthrough",
+      "mern": "MERN project deploy",
+      "notes": "Phase C — Mock + Projects"
+    },
+    {
+      "week": "W10",
+      "dates": "Jul 18–20",
+      "dsa": "2 easy/day only",
+      "csCore": "One-page cheatsheet read",
+      "dataScience": "One-line summaries",
+      "mern": "GitHub links ready",
+      "notes": "PLACEMENT DAY Jul 20"
+    }
+  ],
+  "weeklyNotes": {},
+  "streak": 1,
+  "lastStreakDate": "2026-05-16",
+  "milestones": {
+    "25": false,
+    "50": false,
+    "75": false,
+    "100": false
+  }
+}

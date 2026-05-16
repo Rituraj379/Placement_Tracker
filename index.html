@@ -1324,28 +1324,56 @@ let sidebarCollapsed = false;
 // ═══════════════════════════════════════════════════
 //  CORE
 // ═══════════════════════════════════════════════════
-function init() {
-    loadData();
+async function init() {
+    await loadData();
     checkStreak();
     generateSmartTasksForToday();
     renderAll();
     setTimeout(updateMeters, 120);
 }
 
-function loadData() {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored) {
-        db = JSON.parse(stored);
-        if (!db.milestones) db.milestones = {25:false,50:false,75:false,100:false};
-        if (!db.settings.projectNames) db.settings.projectNames = ["Project 1","Project 2","Project 3","",""];
-    } else {
-        db = JSON.parse(JSON.stringify(defaultData));
-        saveData();
+async function loadData() {
+    try {
+        const response = await fetch('/api/data');
+        const stored = await response.json();
+        if (stored && Object.keys(stored).length > 0) {
+            db = stored;
+            if (!db.milestones) db.milestones = {25:false,50:false,75:false,100:false};
+            if (!db.settings.projectNames) db.settings.projectNames = ["Project 1","Project 2","Project 3","",""];
+        } else {
+            // Attempt local storage migration just in case
+            const localStored = localStorage.getItem(STORAGE_KEY);
+            if (localStored) {
+                db = JSON.parse(localStored);
+                if (!db.milestones) db.milestones = {25:false,50:false,75:false,100:false};
+                if (!db.settings.projectNames) db.settings.projectNames = ["Project 1","Project 2","Project 3","",""];
+            } else {
+                db = JSON.parse(JSON.stringify(defaultData));
+            }
+            saveData();
+        }
+    } catch (e) {
+        console.error("Failed to load from backend:", e);
+        showToast('Running in offline mode (using localStorage)', 'error');
+        const stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+            db = JSON.parse(stored);
+            if (!db.milestones) db.milestones = {25:false,50:false,75:false,100:false};
+            if (!db.settings.projectNames) db.settings.projectNames = ["Project 1","Project 2","Project 3","",""];
+        } else {
+            db = JSON.parse(JSON.stringify(defaultData));
+            saveData();
+        }
     }
 }
 
 function saveData() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+    fetch('/api/data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(db)
+    }).catch(e => console.error("Failed to save to backend:", e));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(db)); // Keep a local backup
     checkMilestones();
 }
 
